@@ -1,0 +1,35 @@
+﻿001 Introduction to PyGame :
+
+Key takeaways from this chapter
+Pygame is a python wrapper for SDL– a cross-platform C library for controlling multimedia, written by Pete Shinners.It is a wrapper around the SDL (Simple DirectMedia Layer) library. What this means is that, using pygame, you can write games or other multimedia applications in Python that will run unaltered on any of SDL's supported platforms (Windows, Unix, Mac, BeOS and others).In this section we indroduce the basics of pygame
+
+functions without defining classes and objects.This means, using pygame, you can write video games or other
+
+multimedia applications in Python that will run unaltered on any of SDL’s supported platforms
+
+(Windows, Unix, Mac, beOS and others).
+
+
+
+
+
+Pygame may be easy to learn, but the world of graphics programming can be pretty confusing to the newcomer
+
+
+
+Import and initialize
+
+
+
+import pygame
+
+
+
+
+The import statement writes the pygame version and a link to the Pygame website to the console (as a side effect):
+
+pygame 1.9.6
+
+Hello from the pygame community.
+
+https://www.pygame.org/contribute.html
