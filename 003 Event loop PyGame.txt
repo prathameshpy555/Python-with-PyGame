@@ -1,0 +1,83 @@
+003 Event loop PyGame :
+
+Key takeaways from this chapter
+The Event Loop (The game loop)
+
+
+
+
+The most essential part of any interactive application is the event loop. Reacting to events allows the user to interact
+
+with the application. Events are the things that can happen in a program, such as a
+
+
+
+• mouse click,
+
+• mouse movement,
+
+• keyboard press,
+
+• joystick action.
+
+The following is an infinite loop which prints all events to the console:
+
+
+
+while True:
+
+for event in pygame.event.get():
+
+print(event)
+
+
+
+Try to move the mouse, click a mouse button, or type something on the keyboard. Every action you do produces an
+
+event which will be printed on the console. This will look something like this:
+
+<Event(4-MouseMotion {'pos': (173, 192), 'rel': (173, 192), 'buttons': (0, 0, 0),
+
+??'window': None})>
+
+<Event(2-KeyDown {'unicode': 'a', 'key': 97, 'mod': 0, 'scancode': 0, 'window': None}
+
+??)>
+
+<Event(3-KeyUp {'key': 97, 'mod': 0, 'scancode': 0, 'window': None})>
+
+<Event(12-Quit {})>
+
+
+
+As we are in an infite loop, it is impossible to quit this program from within the application. In order to quit the
+
+program, make the console the active window and type ctrl-C.
+
+
+
+
+
+Quit the event loop properly
+
+
+
+In order to quit the application properly, from within the application, by using the window close button (QUIT event),
+
+we modify the event loop. First we introduce the boolean variable running and set it to True. Within the event
+
+loop we check for the QUIT event. If it occurs, we set running to False:
+
+running = True
+
+while running:
+
+for event in pygame.event.get():
+
+if event.type == pygame.QUIT:
+
+running = False
+
+
+
+pygame.quit()
