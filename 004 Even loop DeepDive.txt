@@ -1,0 +1,55 @@
+004 Even loop DeepDive :
+
+Key takeaways from this chapter
+Pygame will register all events from the user into an event queue which can be received with the code pygame.event.get(). Every element in this queue is an Event object and they'll all have the attribute type, which is an integer representing what kind of event it is. In the pygame module there are predefined integer constants representing the type. Except for this attribute, events have different attributes.
+
+
+
+
+To handle our events we simply loop through the queue, check what type it is (with the help of the predefined constants in the pygame module) and then perform some action. This code will check if the user has pressed the close button on the top corner of the display, and if so terminate the program.
+
+for event in pygame.event.get():
+
+    if event.type == pygame.QUIT:
+
+        # Close the program any way you want, or troll users who want to close your program.
+
+        raise SystemExit
+
+
+
+
+
+Example : 
+
+
+
+for event in pygame.event.get():
+
+    if event.type == pygame.QUIT:  # Close your program if the user wants to quit.
+
+        raise SystemExit
+
+    elif event.type == pygame.MOUSEMOTION:
+
+        if event.rel[0] > 0:  # 'rel' is a tuple (x, y). 'rel[0]' is the x-value.
+
+            print("You're moving the mouse to the right")
+
+        elif event.rel[1] > 0:  # pygame start y=0 at the top of the display, so higher y-values are further down.
+
+            print("You're moving the mouse down")
+
+    elif event.type == pygame.MOUSEBUTTONDOWN:
+
+        if event.button == 1:
+
+            print("You pressed the left mouse button")
+
+        elif event.button == 3:
+
+            print("You pressed the right mouse button")
+
+    elif event.type == pygame.MOUSEBUTTONUP:
+
+        print("You released the mouse button")
