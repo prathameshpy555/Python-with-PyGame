@@ -1,0 +1,42 @@
+005 Shapes PyGame :
+
+Key takeaways from this chapter
+To use the module you first need to import and initialize pygame correctly and set a mode for the display. It's convenient to define color constants in advance, making your code more readable and more beautiful. All functions takes a Surface to draw on, a color and a position argument that's either a pygame Rect or a 2-element integer/float sequence (the pygame.draw.circle will only take integers because of undefined reasons
+
+
+
+
+The code below will showcase all the different functions, how they are used and how they look. We'll initialize pygame and define some constants before the examples.
+
+import pygame
+
+from math import pi
+
+pygame.init()
+
+
+
+screen = pygame.display.set_mode((100, 100))
+
+WHITE = pygame.Color(255, 255, 255)
+
+RED = pygame.Color(255, 0, 0) 
+
+
+
+The black color is the Surface default color and represents the part of the Surface that hasn't been drawn onto. The parameters of each function is explained down below at Parameters .
+
+Rect
+size = (50, 50)
+
+
+
+rect_border = pygame.Surface(size)  # Create a Surface to draw on.
+
+pygame.draw.rect(rect_border, RED, rect_border.get_rect(), 10)  # Draw on it.
+
+
+
+rect_filled = pygame.Surface(size)
+
+pygame.draw.rect(rect_filled, RED, rect_filled.get_rect()) 
