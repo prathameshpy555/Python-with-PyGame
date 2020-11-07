@@ -1,2 +1,2 @@
 """ pygame.examples.camera
-Basic image capturing
+Basic image capturing and
