@@ -6,3 +6,4 @@ Keyboard controls
 - 1, start camera -1.
 - 0, start camera 0.
 - 0, start camera 0.
+- 0, start camera 0.
