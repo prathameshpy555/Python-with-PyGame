@@ -1,3 +1,2 @@
 """ pygame.examples.camera
-Basic image capturing and display using pygame.camera
-Keyboard controls
+Basic image capturing and display using pygame.came
