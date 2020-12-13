@@ -1,2 +1,2 @@
 """ pygame.examples.camera
-Basic image capturing and display using pygame
+Basic image capturing and display usin
