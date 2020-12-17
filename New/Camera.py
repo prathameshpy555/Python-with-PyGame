@@ -1,2 +1,1 @@
 """ pygame.examples.camera
-Basic
