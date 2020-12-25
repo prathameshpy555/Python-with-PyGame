@@ -1,1 +1,1 @@
-""" pygame.examples.c
+""" pygame.examples.
