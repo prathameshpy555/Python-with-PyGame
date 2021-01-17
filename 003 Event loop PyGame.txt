@@ -12,13 +12,13 @@ with the application. Events are the things that can happen in a program, such a
 
 
 
-• mouse click,
+â€¢ mouse click,
 
-• mouse movement,
+â€¢ mouse movement,
 
-• keyboard press,
+â€¢ keyboard press,
 
-• joystick action.
+â€¢ joystick action.
 
 The following is an infinite loop which prints all events to the console:
 
@@ -81,3 +81,5 @@ running = False
 
 
 pygame.quit()
+
+
