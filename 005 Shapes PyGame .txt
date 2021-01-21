@@ -40,3 +40,4 @@ pygame.draw.rect(rect_border, RED, rect_border.get_rect(), 10)  # Draw on it.
 rect_filled = pygame.Surface(size)
 
 pygame.draw.rect(rect_filled, RED, rect_filled.get_rect()) 
+
