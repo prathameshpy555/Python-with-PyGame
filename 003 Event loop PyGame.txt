@@ -81,5 +81,3 @@ running = False
 
 
 pygame.quit()
-
-
