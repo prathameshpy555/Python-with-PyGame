@@ -31,5 +31,3 @@ You can now run this program and test it. At this moment it does very little. It
 Please find the source code from this repo :
 
 https://github.com/pygame/pygame?files=1
-
-
